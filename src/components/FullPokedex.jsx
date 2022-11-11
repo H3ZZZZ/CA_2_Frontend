@@ -50,6 +50,38 @@ const FullPokedex = () => {
       >
         Fetch 4. generation
       </button>
+      <button
+        style={{ cursor: "pointer" }}
+        onClick={() => fetchPokemonData(5)}
+        className="button"
+        type="button"
+      >
+        Fetch 5. generation
+      </button>
+      <button
+        style={{ cursor: "pointer" }}
+        onClick={() => fetchPokemonData(6)}
+        className="button"
+        type="button"
+      >
+        Fetch 6. generation
+      </button>
+      <button
+        style={{ cursor: "pointer" }}
+        onClick={() => fetchPokemonData(7)}
+        className="button"
+        type="button"
+      >
+        Fetch 7. generation
+      </button>
+      <button
+        style={{ cursor: "pointer" }}
+        onClick={() => fetchPokemonData(8)}
+        className="button"
+        type="button"
+      >
+        Fetch 8. generation
+      </button>
       <h2>Do you need inspiration for pokemon names?</h2>
       <h4>Press a button to get a list of pokemons</h4>
       {data != null && <Generation data={data} />}
