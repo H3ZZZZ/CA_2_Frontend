@@ -2,19 +2,17 @@ import "../styles/header.css";
 import { NavLink, useLocation } from "react-router-dom";
 
 const Header = (props) => {
-//   const location = useLocation();
-//   console.log(location);
 
   return (
     <nav className="navbar">
       <NavLink className="active" to="/">
-        <i className="fa fa-fw fa-home"></i> Home
+        <i className="fa fa-fw fa-user"></i> Pokemoner
       </NavLink>
-      <NavLink to="/search">
-        <i className="fa fa-fw fa-search"></i> Search
+      <NavLink className="active" to="/pokedex">
+        <i className="fa fa-fw fa-user"></i> Pokedex
       </NavLink>
-      <NavLink to="/contact">
-        <i className="fa fa-fw fa-envelope"></i> Contact
+      <NavLink className="active" to="/trolldex">
+        <i className="fa fa-fw fa-user"></i> Trolldex
       </NavLink>
       <NavLink to="/login">
         <i className="fa fa-fw fa-user"></i> Login

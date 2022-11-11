@@ -4,7 +4,7 @@ import LogIn from "./components/Login";
 import LoggedIn from "./components/LoggedIn";
 
 function App() {
-  const [loggedIn, setLoggedIn] = useState(false);
+  const [loggedIn, setLoggedIn] = useState(facade.loggedIn);
 
   const logout = () => {
     facade.logout();

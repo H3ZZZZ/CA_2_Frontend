@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import React from "react";
 
 function LoggedIn() {
-  const [dataFromServer, setDataFromServer] = useState("Loading...");
+  const [dataFromServer, setDataFromServer] = useState("");
 
   useEffect(() => {
     /*TODO*/
@@ -10,7 +10,7 @@ function LoggedIn() {
 
   return (
     <div>
-      <h2>Data Received from server</h2>
+      <h2>Logged in</h2>
       <h3>{dataFromServer}</h3>
     </div>
   );

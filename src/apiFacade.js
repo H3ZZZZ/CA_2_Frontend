@@ -1,4 +1,4 @@
-const URL = "http://localhost:8080";
+const URL = "https://frederikhess.dk/tomcat/CA2";
 
 function handleHttpErrors(res) {
   if (!res.ok) {
